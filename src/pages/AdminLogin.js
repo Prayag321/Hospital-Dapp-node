@@ -32,8 +32,9 @@ const AdminLogin = () => {
                 <h2>Admin Login</h2>
                 <form className={styles.adminLoginForm} onSubmit={handleSubmit}>
                     <div>
-                        <label htmlFor="username">Username:</label>
+   
                         <input
+                        placeholder='Username'
                             type="text"
                             id="username"
                             value={username}
@@ -42,8 +43,9 @@ const AdminLogin = () => {
                         />
                     </div>
                     <div>
-                        <label htmlFor="password">Password:</label>
+
                         <input
+                        placeholder='Passward'
                             type="password"
                             id="password"
                             value={password}

@@ -16,8 +16,8 @@ function Nav() {
                 {/* Replace href with to */}
                 <a className={navStyles.navLink} href="/">Home</a>
                 <a className={navStyles.navLink} href="/patient/registration">Patient Registration</a>
-                <a className={navStyles.navLink} href="/services">Services</a>
-                <a className={navStyles.navLink} href="/contact">Contact</a>
+                <a className={navStyles.navLink} href="/#services">Services</a>
+                <a className={navStyles.navLink} href="/#contact">Contact</a>
                 <div className={navStyles.loginDropdown}>
                     <select className={navStyles.navSelect} onChange={handleSelectChange}>
                         <option className={navStyles.navSelectOption} value="">Login</option>

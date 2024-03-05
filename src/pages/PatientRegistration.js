@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import Nav from "../components/nav";
 import Footer from "../components/footer";
+import "../style/PatientRegistration.css"
 
 const PatientRegistration = () => {
   const [name, setName] = useState('');
@@ -33,27 +34,27 @@ const PatientRegistration = () => {
   return (
     <>
     <Nav/>
-    <div>
-      <h2>Patient Registration</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Name:</label>
-          <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
-        </div>
-        <div>
-          <label>Age:</label>
-          <input type="text" value={age} onChange={(e) => setAge(e.target.value)} />
-        </div>
-        <div>
-          <label>Contact:</label>
-          <input type="text" value={contact} onChange={(e) => setContact(e.target.value)} />
-        </div>
-        <div>
-          <label>Password:</label>
-          <input type="text" value={password} onChange={(e) => setPassword(e.target.value)} />
-        </div>
-        <button type="submit">Register</button>
-      </form>
+    <div class="registration-container">
+        <h2>Patient Registration</h2>
+        <form id="registration-form" class="registration-form" onSubmit="handleSubmit(event)">
+            <div>
+                <label for="name" class="registration-label">Name:</label>
+                <input type="text" id="name" class="registration-input" required/>
+            </div>
+            <div>
+                <label for="age" class="registration-label">Age:</label>
+                <input type="text" id="age" class="registration-input" required/>
+            </div>
+            <div>
+                <label for="contact" class="registration-label">Contact:</label>
+                <input type="text" id="contact" class="registration-input" required/>
+            </div>
+            <div>
+                <label for="password" class="registration-label">Password:</label>
+                <input type="password" id="password" class="registration-input" required/>
+            </div>
+            <button type="submit" class="registration-button">Register</button>
+        </form>
     </div>
     <Footer/>
     </>

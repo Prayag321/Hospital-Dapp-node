@@ -1,9 +1,14 @@
 /* adminLogin.module.css */
 
+body {
+    font-family: Poppins, Segoe UI, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
 .adminLoginCanvas {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #18c0d0, #ffffff);
     height: 100vh;
     display: flex;
@@ -55,14 +60,14 @@
 .adminLoginContainer:hover h2{
     text-align:left;
     color: #18c0d0;
-    font-size:medium;
+    font-size:1.3rem;
     margin-top: 30px;
 }
 
 .adminLoginForm {
     display: flex;
     flex-direction: column;
-    margin-top: 36px;
+    margin-top: 30px;
     transition: all ease-in-out 0.5s;
     transition-delay: .5s;
 }
@@ -75,6 +80,7 @@
     margin: 10px 0;
     padding: 10px;
     border: 1px solid #18c0d0;
+    width: 100%;
     border-radius: 5px;
     transition: border-color 0.3s ease;
 }
