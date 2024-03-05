@@ -1,0 +1,72 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+/* adminDashboard.module.css */
+
+.adminContainer {
+    margin: 20px;
+}
+
+.adminHeading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.adminSubHeading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.adminLabel {
+    font-weight: bold;
+}
+
+.adminInput {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.adminButton {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.adminButton:hover {
+    background-color: #0056b3;
+}
+
+.adminTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.adminTableHeader {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.adminTableData {
+    border: 1px solid #ddd;
+    padding: 8px;
+}

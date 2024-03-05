@@ -1,0 +1,114 @@
+/* patientDashboard.module.css */
+
+.centerPatientDashboard {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerPatientDashboard {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 800px;
+    width: 90%;
+}
+
+h2.patientHeading,
+h3.patientSubheading {
+    color: #18c0d0;
+    margin-bottom: 15px;
+}
+
+form.patientForm {
+    margin-bottom: 30px;
+}
+
+label.patientLabel {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="date"].patientDateInput,
+select.patientSelect,
+button.patientButton {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+select.patientSelect {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2318c0d0' width='24px' height='24px'%3E%3Cpath d='M7 10l5 5 5-5H7z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 24px;
+}
+
+button.patientButton[type="submit"] {
+    background-color: #18c0d0;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.patientButton[type="submit"]:hover {
+    background-color: #1a8c99;
+}
+
+ul.patientList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.patientList li {
+    margin-bottom: 10px;
+}
+
+ul.patientList li a {
+    color: #18c0d0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+ul.patientList li a:hover {
+    text-decoration: underline;
+    color: #1a8c99;
+}
+
+.fileInputContainerPatient {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #18c0d0;
+    color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fileInputContainerPatient:hover {
+    background-color: #1a8c99;
+}
+
+.fileInputContainerPatient input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
