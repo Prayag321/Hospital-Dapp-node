@@ -4,12 +4,12 @@ body {
     font-family: Poppins, Segoe UI, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
-
 }
+
 .adminLoginCanvas {
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #18c0d0, #ffffff);
+    background: rgba(115, 222, 232, 0.486);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -17,7 +17,7 @@ body {
 }
 
 .adminLoginMain {
-    background-color:#f8fefe;
+    background-color: #f8fefe;
     height: 86vh;
     width: 91vw;
     border-radius: 20px;
@@ -27,13 +27,13 @@ body {
     justify-content: flex-start;
     padding-left: 285px;
     background-image: url(../images/Computer-login-bro.png);
-    background-size:500px 500px;
+    background-size: 500px 500px;
     background-repeat: no-repeat;
     background-position: 84% 50%;
 }
 
 .adminLoginContainer {
-    background-color:white;
+    background-color: white;
     border-radius: 18px;
     padding: 16px;
     padding-top: 29px;
@@ -41,7 +41,7 @@ body {
     height: 345px;
     width: 328px;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     border: 2px #93d8dad7 solid;
 }
 
@@ -57,10 +57,10 @@ body {
     transition-delay: 1s;
 }
 
-.adminLoginContainer:hover h2{
-    text-align:left;
+.adminLoginContainer:hover h2 {
+    text-align: left;
     color: #18c0d0;
-    font-size:1.3rem;
+    font-size: 1.3rem;
     margin-top: 30px;
 }
 
@@ -72,7 +72,7 @@ body {
     transition-delay: .5s;
 }
 
-.adminLoginContainer:hover .adminLoginForm{
+.adminLoginContainer:hover .adminLoginForm {
     margin-top: 10px;
 }
 
@@ -103,4 +103,14 @@ body {
 
 .adminLoginForm button:hover {
     background-color: #1a8c99;
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 850px) {
+    .adminLoginMain {
+        padding-left: 0;
+        justify-content: center;
+        background-position: center;
+    }
 }

@@ -3,38 +3,38 @@ import footerStyles from "../style/footer.module.css";
 
 function Footer() {
     return (
-        <footer className="site-footer bg-black bg-gradient text-white p-4">
+        <footer className="site-footer bg-info bg-gradient text-black p-4 ">
             <div className="container">
                 <div className="row">
                     <div className="col-md-4">
                         <h3>Contact Us</h3>
-                        <p>Pillai HOC College</p>
+                        <p>Vishwaniketan's Institute</p>
                         <p>Phone: +91 93261 73967</p>
                     </div>
                     <div className="col-md-4">
                         <h3>Quick Links</h3>
                         <ul className="footer-links">
-                            <li><a href="#" className="link-info">Home</a></li>
-                            <li><a href="/#services" className="link-info">Services</a></li>
-                            <li><a href="/#contactus" className="link-info">Contact us</a></li>
+                            <li><a href="#" className="link-dark">Home</a></li>
+                            <li><a href="/#services" className="link-dark">Services</a></li>
+                            <li><a href="/#contactus" className="link-dark">Contact us</a></li>
                         </ul>
                     </div>
                     <div className="col-md-4">
                         <h3>Connect With Us</h3>
                         <ul className="social-icons">
-                            <li><a href="mailto:adityana20it@student.mes.ac.in" className="link-info">@student.mes.ac.in</a></li>
-                            <li><a href="mailto:prayagmb20it@student.mes.ac.in" className="link-info">@student.mes.ac.in</a></li>
-                            <li><a href="mailto:rohanmk20it@student.mes.ac.in" className="link-info">@student.mes.ac.in</a></li>
+                            <li><a href="mailto:gharatbhavesh141@gmail.com" className="link-dark">gharatbhavesh141@gmail.com</a></li>
+                            <li><a href="mailto:gharatbhavesh141@gmail.com" className="link-dark">gharatbhavesh141@gmail.com</a></li>
+                            <li><a href="mailto:gharatbhavesh141@gmail.com" className="link-dark">gharatbhavesh141@gmail.com</a></li>
                         </ul>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-md-12 text-center">
                         <p>
-                            Customer Support: +91 8369204930 | Email: <span><a href="mailto:rohanmk20it@student.mes.ac.in" className="link-info">rohanmk20it@student.mes.ac.in</a></span>
+                            Customer Support: +91 8369204930 | Email: <span><a href="mailto:gharatbhavesh141@gmail.com" className="link-dark">gharatbhavesh141@gmail.com</a></span>
                         </p>
                         <p>
-                            &copy; 2024 Hospital Management System. All Rights Reserved | Designed by <span className="font-monospace text-info">AirSheild</span>
+                            &copy; 2024 Hospital Management System. All Rights Reserved <span className="font-monospace text-primary "></span>
                         </p>
                     </div>
                 </div>

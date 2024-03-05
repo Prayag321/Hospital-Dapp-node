@@ -9,6 +9,7 @@
 .nav {
     background-color:   #18c1d0;
     padding: 1rem 0;
+
 }
 
 .navLinksContainer {
@@ -41,12 +42,16 @@
     border-radius: 5px;
     background-color: #18c1d0;
     color: #fff;
-    border: none;
+    border: .5px solid  #18c1d0;
     appearance: none;
     cursor: pointer;
+    box-sizing: border-box;
+}
+.navSelect:hover{
+    border: .5px solid #126e9b;
 }
 
 .navSelectOption {
-    color:  #79ced87c;
-    background-color: #fff;
+    color:#33c1e8;
+    background-color: white;
 }

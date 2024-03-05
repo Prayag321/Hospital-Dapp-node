@@ -12,10 +12,10 @@ const PatientRegistration = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    
+
     // Prepare data to send to the server
     const patientData = { name, age, contact, password };
-    
+
     // Send a POST request to the backend endpoint
     axios.post('http://localhost:3001/patient/api/register-patient', patientData)
       .then(response => {
@@ -33,30 +33,32 @@ const PatientRegistration = () => {
 
   return (
     <>
-    <Nav/>
-    <div class="registration-container">
-        <h2>Patient Registration</h2>
-        <form id="registration-form" class="registration-form" onSubmit="handleSubmit(event)">
+      <Nav />
+      <div class="Registration-container">
+        <div class="registration-container">
+          <h2>Patient Registration</h2>
+          <form id="registration-form" class="registration-form" onSubmit="handleSubmit(event)">
             <div>
-                <label for="name" class="registration-label">Name:</label>
-                <input type="text" id="name" class="registration-input" required/>
+              <label for="name" class="registration-label">Name:</label>
+              <input type="text" id="name" class="registration-input" required />
             </div>
             <div>
-                <label for="age" class="registration-label">Age:</label>
-                <input type="text" id="age" class="registration-input" required/>
+              <label for="age" class="registration-label">Age:</label>
+              <input type="text" id="age" class="registration-input" required />
             </div>
             <div>
-                <label for="contact" class="registration-label">Contact:</label>
-                <input type="text" id="contact" class="registration-input" required/>
+              <label for="contact" class="registration-label">Contact:</label>
+              <input type="text" id="contact" class="registration-input" required />
             </div>
             <div>
-                <label for="password" class="registration-label">Password:</label>
-                <input type="password" id="password" class="registration-input" required/>
+              <label for="password" class="registration-label">Password:</label>
+              <input type="password" id="password" class="registration-input" required />
             </div>
             <button type="submit" class="registration-button">Register</button>
-        </form>
-    </div>
-    <Footer/>
+          </form>
+        </div>
+      </div>
+      <Footer />
     </>
   );
 };

@@ -2,10 +2,12 @@ import React from 'react';
 import '../style/Home.css';
 import Nav from "../components/nav";
 import Footer from "../components/footer";
-import Doctor1 from "../images/Doctor-rafiki.png"
-import Aboutus from "../images/About us page-pana.png"
-import Vision from "../images/Thinking face-amico.png"
-import Mission from "../images/Business mission-pana.png"
+import Doctor1 from "../images/Doctor-rafiki.png";
+import Doctor2 from "../images/Doctor-cuate.png";
+import Doctor3 from "../images/Admin-rafiki.png";
+import Aboutus from "../images/team.png";
+import Vision from "../images/visionary.png";
+import Mission from "../images/target.png";
 
 function Home() {
   return (
@@ -40,17 +42,17 @@ function Home() {
             </button>
           </div>
         </div>
-        <div className="container marketing">
+        <div className="container marketing mt-5 ">
           {/* About section */}
           <div className="row">
             <div className="col-lg-4">
-              <img src={Aboutus} alt=" " className="img-fluid mb-3 " />
+              <img src={Aboutus} alt=" " className="img-fluid mb-3" />
               <h2>About Us</h2>
               <p>We are a leading hospital dedicated to providing exceptional healthcare services to our
                 patients.</p>
             </div>{/* /.col-lg-4 */}
             <div className="col-lg-4">
-              <img src={Mission} alt="Hospital Image 2" className="img-fluid mb-3 " />
+              <img src={Mission} alt="Hospital Image 2" className="img-fluid mb-3" />
               <h2>Our Mission</h2>
               <p>Our mission is to deliver compassionate care and promote wellness within our community.</p>
             </div>{/* /.col-lg-4 */}
@@ -83,7 +85,7 @@ function Home() {
                 efficiency and satisfaction.</p>
             </div>
             <div className="col-md-5 order-md-1">
-              <img className="featurette-image img-fluid mx-auto" src={Doctor1} alt="Generic placeholder image" />
+              <img className="featurette-image img-fluid mx-auto" src={Doctor2} alt="Generic placeholder image" />
             </div>
           </div>
           <hr className="featurette-divider" />
@@ -95,7 +97,7 @@ function Home() {
                 to ensure smooth hospital operations.</p>
             </div>
             <div className="col-md-5">
-              <img className="featurette-image img-fluid mx-auto" src={Doctor1} alt="Generic placeholder image" />
+              <img className="featurette-image img-fluid mx-auto" src={Doctor3} alt="Generic placeholder image" />
             </div>
           </div>
         </div>
